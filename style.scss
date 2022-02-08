@@ -1,0 +1,52 @@
+:root{
+   --white: white;
+   --black: black;
+}
+
+$myBorder:1px solid black; 
+$myPadding: 10px;
+$myMargin: 10px;
+
+
+
+header {
+    text-align: center;
+    background-color: var(--black);
+
+}
+
+// Here is nested rule is a tag inside of header
+
+header{
+    a {
+        text-decoration: none;
+        color: var(--white);
+    }
+}
+
+// Here is nested rule is paragraph  inside of main 
+
+main{
+    border: $myBorder;
+    padding: $myPadding;
+    margin: $myMargin;
+    p {
+        background-color: var(--black);
+        color: var(--white);
+    }
+
+}
+
+// Here nested rule is paragraph inside of footer
+
+footer {
+    border: $myBorder;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    p {
+        color: red;
+    }
+}
+
+
